@@ -13,7 +13,7 @@ services:
     container_name: "ipfs0"
     ports:
     #   - 4001:4001 # ipfs swarm
-    #   - 5001:5001 # ipfs api
+      - 5001:5001 # ipfs api
       - 8080:8080 # ipfs gateway
     volumes:
       - ./data/ipfs0:/data/ipfs/
